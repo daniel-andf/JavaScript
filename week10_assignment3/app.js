@@ -39,8 +39,10 @@ function authSearch (){
 	}
 
 	catch (err){
-
-		document.getElementById('result').innerHTML = 'sorry no books by ' + aName
+		if (err === "empty")
+			document.getElementById('result').innerHTML = 'Please, type the name of the author' + aName
+		else
+			document.getElementById('result').innerHTML = 'sorry no books by ' + aName
 	}
 }
 
