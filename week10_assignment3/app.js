@@ -23,10 +23,10 @@ function authSearch (){
 		{
 			if(i==0){
 				
-				result = "The author " + name[0].author + " have the following books: " + name[0].title
+				result = `The author ${name[0].author} have the following books: ${name[0].title}`
 			}
 			else{
-				result = result + " and " + name[i].title
+				result = `${result} and ${name[i].title}`
 			}
 		}
 		
