@@ -19,7 +19,6 @@ function authSearch (){
 
 		let name = books.filter((x) => x.author.toUpperCase().search(aName) >= 0)
 
-		console.log(name)
 		for (let i=0; i<name.length;i++)
 		{
 			if(i==0){
@@ -46,13 +45,6 @@ function authSearch (){
 	}
 }
 
-function listBook(item,index,array){
-	console.log(item)
-	console.log(index)
-	console.log(array[index].author)
-	result.innerHTML = "The author " + array[index].author + " has the book  " + array[index].title + "<br /> "
-
-}
 
 function nameBook(){
 //function to get the author and title of the book and return as a object that will be a attribute of the function addBook
