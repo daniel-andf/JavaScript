@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lending Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>The Library</h1>
+    <div id="logon">
+      <p>Enter with your login/password</p>
+      Login: <input id="login">
+      Password: <input id="password">
+      <button type="button" onclick="loginLibrary()">Sign in</button>
+      <button type="button" onclick="newUser()">Create a new User</button>
+      <p id='result3'></p>
+    </div>
+
+    <div id="newuser">
+      <p>Enter with new your login/password</p>
+      Login: <input id="newlogin">
+      Password: <input id="newpassword">
+      <button type="button" onclick="createUser()">Create User</button>
+      <button type="button" onclick="logOut()">Back</button>
+      
+    </div>
+    
+    <div id="logged">
+      <p id="welcome"></p>
+      <button type="button" onclick="logOut()">LogOut</button>
+      <input type="hidden" id="card" value="">
+      <p>Search books Title or Genre</p>
+      Title: <input id="titleSearch">
+      Genre: <input id="genreSearch">
+      <button type="button" onclick="bookSearch()">Search</button>
+      <p id='result'></p>
+      <p id='result2'></p>
+
+      <h2>Books currently available in the library to rent</h2>
+      <button type="button" onclick="showAllBooks()">Show Books</button>
+      <ol id="allTheBooks">
+      </ol>
+      <ol id="booksborrowed">
+        
+      </ol>
+      <button type="button" onclick="borrowBook()" id="borrowbooks">Borrow Books </button>
+    </div>
+  </main>
+  <footer>
+    <p>wmdd 4820 2016 - Daniel Fonseca</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
