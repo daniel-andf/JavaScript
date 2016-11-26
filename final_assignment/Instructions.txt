@@ -1,0 +1,13 @@
+With this app, you will be able to :
+- Create a new user
+
+- Log in
+
+- Log out and log in with a different user
+
+- Search for books by title and/or genre(case sensitive and search using a string of part of title and/or genre). 
+If all the copies are rented, the app will display a message saying that the book is unavailable
+
+- You can borrow books using multiples users. There is a default user(login:'daniel,password:wmdd). After you create at least one new user,
+you can log in with the new user borrow multiples books by selecting the checkbox, then log out and log in with a new user. The books available
+to rent will be updated with the number of copies available to rent. If the copies reaches 0, it won't be displayed on the app.
