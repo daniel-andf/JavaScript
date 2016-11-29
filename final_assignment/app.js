@@ -23,7 +23,7 @@ function newUser() {
 	document.getElementById('logon').style.display = 'none'
 	document.getElementById('newlogin').value = ''
 	document.getElementById('newpassword').value = ''
-}
+}//function that shows the new user fields and hides logon fields
 
 function createUser(){
 
@@ -36,7 +36,7 @@ function createUser(){
 	document.getElementById('logon').style.display = 'initial'
 
 	document.getElementById('result3').innerHTML = 'Your user has been created'	
-}
+}//function that lets to create a new user and after creation, display the logon section again
 
 function loginLibrary(){
 	let login = document.getElementById('login').value
@@ -64,7 +64,7 @@ function loginLibrary(){
 	if(loginCheck==false)
 		document.getElementById('result').innerHTML = 'Your login/password are not in our database. Please try again'	
 
-}
+}//function that validates if the user and password are correct and allow to login on the library
 
 function logOut(){
 
@@ -87,7 +87,8 @@ function logOut(){
 	document.getElementById('result2').innerHTML=''
 	document.getElementById('result3').innerHTML=''
 	document.getElementById('logon').style.display = 'initial'
-}
+}//function that allows to login with another user, by clearing all the content that were selected or typed by another user, and 
+//allows to do a new login
 
 function bookSearch(){
 	let aTitle = document.getElementById ('titleSearch').value.toUpperCase()
@@ -166,7 +167,7 @@ function bookSearch(){
 		else
 			document.getElementById('result').innerHTML = 'Sorry! No books by genre ' + aGenre
 	}
-}
+}//function that shows all books listed, and warns if the book searched is borrowed
 
 
 function showAllBooks () {
@@ -188,7 +189,7 @@ function showAllBooks () {
 			document.getElementById('borrowbooks').style.display='initial'
 		}
 	}
-}
+}//function that shows all books available to borrow
 
 function borrowBook(){
 	var borrowedBooks = document.querySelectorAll('input[name="book"	]:checked')
@@ -217,4 +218,4 @@ function borrowBook(){
 
 	showAllBooks()
 
-}
+}// function that allows to borrow multiples books and refresh the list of books available
