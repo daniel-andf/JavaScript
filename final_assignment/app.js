@@ -48,6 +48,7 @@ function loginLibrary(){
 	document.getElementById('result').value=''
 	document.getElementById('result2').value=''
 	document.getElementById('result3').value=''
+	document.getElementById('result4').value=''
 
 	for (let i=0; i<users.length;i++)
 	{
@@ -62,7 +63,7 @@ function loginLibrary(){
 	}
 
 	if(loginCheck==false)
-		document.getElementById('result').innerHTML = 'Your login/password are not in our database. Please try again'	
+		document.getElementById('result4').innerHTML = 'Your login/password are not in our database. Please try again'	
 
 }//function that validates if the user and password are correct and allow to login on the library
 
@@ -86,6 +87,7 @@ function logOut(){
 	document.getElementById('result').innerHTML=''
 	document.getElementById('result2').innerHTML=''
 	document.getElementById('result3').innerHTML=''
+	document.getElementById('result4').value=''
 	document.getElementById('logon').style.display = 'initial'
 }//function that allows to login with another user, by clearing all the content that were selected or typed by another user, and 
 //allows to do a new login
